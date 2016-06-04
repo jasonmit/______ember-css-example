@@ -1,0 +1,7 @@
+$color: #fff;
+
+.root {
+  background: $gray;
+  color: $color;
+  padding: $large;
+}

@@ -20,6 +20,8 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
+    "broccoli-file-creator": "^1.1.0",
+    "broccoli-postcss-sourcemaps": "^2.2.0-sourcemaps.1",
     "ember-ajax": "0.7.1",
     "ember-cli": "2.5.1",
     "ember-cli-app-version": "^1.0.0",
@@ -33,10 +35,18 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.5.0",
+    "ember-css-modules": "*",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "postcss": "^5.0.21",
+    "postcss-simple-vars": "^2.0.0"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/postcss-addon"
+    ],
+    "before": "ember-css-modules"
   }
 }

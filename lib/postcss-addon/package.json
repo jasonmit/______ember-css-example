@@ -1,0 +1,9 @@
+{
+  "name": "postcss-addon",
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "before": "ember-css-modules"
+  }
+}
